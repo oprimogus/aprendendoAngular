@@ -7,8 +7,13 @@
   </article>
   <article>
     <h3>Property Binding</h3>
-    <img src="{{ urlImagem }}">
+    <img src="{{ urlImagem }}" alt="BATATA">
     <br>
     <img [src]="urlImagem" alt="BATATA">
+  </article>
+  <article>
+    <h3>Input/Output Properties</h3>
+    <app-curso [nome]="nomeCurso"></app-curso>
+    <contador [valor]="10" (mudouValor)="onMudouValor($event)"></contador>
   </article>
 </section>
